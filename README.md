@@ -29,7 +29,7 @@ import { Form, Field } from 'react-final-form'
 import useCep from 'use-cep'
 
 function App (props) {
-  const { query, loading, error, data } = useCep()
+  const { fetch, loading, error, data } = useCep()
 
   return (
     <Form {...props}>
