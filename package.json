@@ -1,6 +1,6 @@
 {
   "name": "use-cep",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "use-cep React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -9,6 +9,14 @@
     "es",
     "lib",
     "umd"
+  ],
+  "keywords": [
+    "react",
+    "hook",
+    "cep",
+    "use",
+    "promise",
+    "cep-promise"
   ],
   "scripts": {
     "build": "nwb build-react-component",
@@ -34,11 +42,8 @@
     "react-dom": "^16.8.6",
     "react-final-form": "^6.3.0"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Guilherme Santiago",
+  "homepage": "https://github.com/gsantiago/use-cep",
   "license": "MIT",
-  "repository": "",
-  "keywords": [
-    "react-component"
-  ]
+  "repository": "https://github.com/gsantiago/use-cep"
 }
