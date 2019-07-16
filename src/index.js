@@ -1,9 +1,30 @@
-import React, {Component} from 'react'
+import { useState, useCallback } from 'react'
+import cepPromise from 'cep-promise'
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
+export default function useCep () {
+  const [ data, setData ] = useState(null)
+  const [ error, setError ] = useState(null)
+  const [ loading, setLoading ] = useState(false)
+
+  const fetch = useCallback(async cep => {
+    setLoading(true)
+
+    try {
+      const data = await cepPromise(cep)
+      setData(data)
+      return data
+    } catch (err) {
+      setError(err)
+      setData(null)
+    } finally {
+      setLoading(false)
+    }
+  }, [])
+
+  return {
+    data,
+    error,
+    loading,
+    fetch
   }
 }

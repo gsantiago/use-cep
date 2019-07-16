@@ -19,14 +19,20 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "cep-promise": "^3.0.7"
+  },
   "peerDependencies": {
-    "react": "16.x"
+    "final-form": "^4.18.2",
+    "react": "16.x",
+    "react-final-form": "^6.3.0"
   },
   "devDependencies": {
+    "final-form": "^4.18.2",
     "nwb": "0.23.x",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-final-form": "^6.3.0"
   },
   "author": "",
   "homepage": "",
