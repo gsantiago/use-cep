@@ -14,7 +14,7 @@ A React hook for loading CEP data. It uses [`cep-promise`](https://www.npmjs.com
 
 ## Usage
 
-```
+```js
 import useCep from 'use-cep'
 
 // Using the hook
